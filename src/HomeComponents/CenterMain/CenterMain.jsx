@@ -72,11 +72,7 @@ function CenterMain(props) {
       );
     }
   };
-  // const handleSubmit = (event) => {
-  //   // event.preventDefault();
-  //   console.log(event.target.value);
-  //   console.log("clicked");
-  // };
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
