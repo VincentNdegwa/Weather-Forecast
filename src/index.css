@@ -1,13 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(45deg, #11101f, #1b183a);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Main {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 60% 30%;
+  justify-content: end;
+  /* grid-template-columns: 10% 60% 30%; */
+}
+.App {
+  height: 200vh;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .Main {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 10% 50% 40%;
+    grid-template-rows: repeat(10, 10%);
+  }
+  .Navbar {
+    width: 10%;
+    height: 100vh;
+    grid-row-start: 1;
+    grid-row-end: 11;
+  }
+  .CenterMain {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+  .Forecast {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 11;
+  }
 }
